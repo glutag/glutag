@@ -9,16 +9,16 @@ void selection_sort (int arr[],int n){
             if (arr[j] < arr[minindex])
             {
                 printf("j = %i \n", j);
-                minindex = j;
-                int temp = arr[i];
-                printf("temp = %i \n", temp);
-                arr[i] = arr[minindex];
-                printf("arr[minindex] = %i \n", arr[minindex]);
-                printf("inner lop ends \n");
-                arr[minindex] = temp;
+                minindex = j;  
             }
-            
         }
+        int temp = arr[i];
+        printf("temp = %i \n", temp);
+        arr[i] = arr[minindex];
+        printf("arr[minindex] = %i \n", arr[minindex]);
+        printf("inner lop ends \n");
+        arr[minindex] = temp;
+        
     }
 }
 
